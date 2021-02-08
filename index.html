@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Master</title>
+    <!--FontAwesome Icons Link-->
+    <link rel="stylesheet" href="Assets-File/all.min.css">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--Custom CSS Link-->
+    <link rel="stylesheet" href="Assets-File/Custom.css">
+    <!--Custom Responsive CSS-->
+    <link rel="stylesheet" href="Assets-File/responsive.css">
+  </head>
+  <body>
+    <header class="header-area"> <!--Header Area Start-->
+      <div class="container">
+        <main class="header-content">
+          <div class="logo-area">
+            <a href="">
+              <h4>Cooking Master</h4>
+            </a>
+          </div>
+          <nav class="menu-area">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Recipes</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </nav>
+        </main>
+      </div>
+    </header><!--Header Area End-->
+
+    <section class="showcase-area"><!--Showcase Area-->
+      <div class="container">
+        <div class="section-title">
+          <div class="Image-box">
+            <img src="Assets-File/cooking-logo.png" alt="cooking master logo">
+          </div>
+        </div>
+      </div>
+    </section><!--showcase area end-->
+
+    <section class="foods-area"><!--Foods Area Start-->
+      <div class="container">
+        <div class="food-input-field">
+          <input id="food-input" type="text" placeholder="Search By Food Name">
+          <button onclick="searchFoodMeal()" id="search-button">Search</button>
+        </div>
+        <div class="food-gallery">
+         <div class="foods-showcase" id="food-container"><!--Foods Showcase-->
+
+         </div>
+        </div>
+        <h4 class="Error-Tag" id="Error-Message">Your Entire Data is not found!</h4>
+      </div>
+    </section><!--Foods Area End-->
+
+    <section class="modal-area"><!--Modal Area Start-->
+      <div class="container">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Food Ingredients Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modal-info" id="meal-ingredients">
+
+              </div>
+              <div class="modal-footer m-footer">
+                <p>copyright &copy;2020 all right reserved <i style="color: #d35d6e;" class="far fa-heart"></i> muhammed nayeem</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--Modal Area End-->
+
+    <!--JavaScript Files Added-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets-File/app.js"></script>
+  </body>
+</html>
